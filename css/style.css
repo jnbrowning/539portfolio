@@ -1,0 +1,318 @@
+body {
+  background-color: #F8F0DF;
+}
+
+main{
+  margin: 15px 20px 80px;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  padding-top: 20px;
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+main p{
+  margin: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  color: #334257;
+}
+
+footer {
+  background-color: #037CB0!important;
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+  padding: 20px;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+body > header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Skip to Main Content */
+.skip a{
+  background: black;
+  color: white;
+  left: 0;
+  padding: 5px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -40px;
+}
+
+.skip a:focus{
+  top: 3px;
+  left: 3px;
+  border: 2px dashed;
+  border-color: #334257;
+  border-radius: 10%;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #037CB0!important;
+  font-family: 'Josefin Sans', sans-serif;
+  justify-content: flex-end;
+}
+
+.navbar-light .navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #FFF;
+}
+
+.navbar-light .navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: black;
+}
+
+/* About Me */
+.about{
+  width: 50%;
+  border-radius: 50%;
+  border-color: #9D9D9D;
+  display: block;
+  border-style: solid;
+  border-width: 3px;
+  margin: 30px auto;
+}
+
+.main-img{
+  width: 60%;
+}
+
+.about-me{
+  display: flex;
+  flex-direction: column;
+}
+
+/* About Kenai */
+.puppy-imgs{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 175px 175px 150px 75px 100px 75px 175px 190px 175px 150px 140px;
+  margin: 20px 10px;
+  grid-gap: 5px;
+}
+
+.puppy-imgs div{
+  display: grid;
+  align-content: center;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #334257;
+  overflow: hidden;
+}
+
+.kenai-img:hover{
+  opacity: 50%;
+}
+
+/* Grid Images */
+.k-proper {
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
+}
+
+.k-cute {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.k-window {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.k-grad {
+  grid-column: 2 / 4;
+  grid-row: 3 / 5;
+}
+
+.k-camp{
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.k-bear {
+  grid-column: 1 / 2;
+  grid-row: 4 / 6;
+}
+
+.k-mermaid {
+  grid-column: 3 / 4;
+  grid-row: 5 / 7;
+}
+
+.k-cardboard {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+}
+
+.k-unicorn {
+  grid-column: 1 / 3;
+  grid-row: 6 / 8;
+}
+
+.k-workout {
+  grid-column: 3 / 4;
+  grid-row: 7 / 8;
+}
+
+.k-destructive {
+  grid-column: 1 / -1;
+  grid-row: 8 / 9;
+}
+
+.k-car{
+  grid-column: 3 / 4;
+  grid-row: 9 / 10;
+}
+
+.k-tent {
+  grid-column: 2 / 3;
+  grid-row: 9 / 10;
+}
+
+.k-tongue{
+  grid-column: 1 / 2;
+  grid-row: 9 / 10;
+}
+
+.k-sewing {
+  grid-column: 2 / 4;
+  grid-row: 10 / 12;
+}
+
+.k-table {
+  grid-column: 1 / 2;
+  grid-row: 10 / 11;
+}
+
+.k-cgc {
+  grid-column: 1 / 2;
+  grid-row: 11 / 12;
+}
+
+/* Hometown */
+.hometowns{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home {
+  display: flex;
+  flex-basis: 250px;
+  height: 300px;
+  margin: 15px;
+  background-color: #D7E9F7;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.home header {
+  background-color: #F4D19B;
+  width: 100%;
+  padding: 20px 0 15px;
+  text-align: center;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Hobbies */
+.hobbies{
+  display: grid;
+  margin: 20px 15px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 100px 300px 200px 200px;
+}
+
+.hobbies > div {
+    display: grid;
+    align-content: center;
+}
+
+.hobby-img {
+  overflow: hidden;
+}
+
+.hiking-img {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+.hiking-txt {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+}
+
+.travel-img{
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+.travel-txt{
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.gaming-img{
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+}
+
+.gaming-txt{
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+}
+
+.sewing-img {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+}
+
+.sewing-txt {
+  grid-column: 2 / 4;
+  grid-row: 5 / 6;
+}
+
+.sewing-txt a {
+  font-family: 'Josefin Sans', sans-serif;
+  margin-left: 20px;
+  font-size: 1rem;
+  color: #2C2891;
+  text-decoration: underline;
+}
