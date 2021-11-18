@@ -1,0 +1,536 @@
+body {
+  background-color: #F8F0DF;
+}
+
+main{
+  margin: 15px 20px 80px;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  padding-top: 20px;
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+main p{
+  margin: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  color: #334257;
+}
+
+footer {
+  background-color: #037CB0!important;
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+  padding: 20px;
+  font-size: 1rem;
+
+}
+body > header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Skip to Main Content */
+.skip a{
+  background: black;
+  color: white;
+  left: 0;
+  padding: 5px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -40px;
+}
+
+.skip a:focus{
+  top: 3px;
+  left: 3px;
+  border: 2px dashed;
+  border-color: #334257;
+  border-radius: 10%;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #037CB0!important;
+  font-family: 'Josefin Sans', sans-serif;
+  justify-content: flex-end;
+}
+
+.navbar-light .navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #FFF;
+}
+
+.navbar-light .navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: black;
+}
+
+/* About Me */
+.about{
+  width: 50%;
+  border-radius: 50%;
+  border-color: #9D9D9D;
+  display: block;
+  border-style: solid;
+  border-width: 3px;
+  margin: 30px auto;
+}
+
+.main-img{
+  width: 60%;
+}
+
+.about-me{
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  background-color: #F4D19B;
+  width: 70%;
+  padding: 15px;
+  margin: 20px auto 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+}
+
+label {
+  display: block;
+  color: black;
+  padding: 3px;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+input {
+  display: block;
+  padding: 5px;
+  width: 80%;
+  margin-left: 10%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+textarea {
+  width: 80%;
+  height: 50px;
+  margin-left: 10%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.submit {
+  width: 50%;
+  margin: 10px auto;
+  font-family: 'Josefin Sans', sans-serif;
+  height: 50px;
+  background-color: #037CB0;
+}
+
+.submit:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+legend{
+  text-align: center;
+  font-size: 2em;
+  text-decoration: underline;
+}
+/* About Kenai */
+.puppy-imgs{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px 10px 10px;
+  grid-gap: 5px;
+  align-items: center;
+}
+
+.puppy-imgs > div{
+  border-width: 3px;
+  border-style: solid;
+  border-color: #334257;
+  position: relative;
+}
+
+.kenai-img{
+  display: block;
+  height: auto;
+}
+
+.kenai-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: #F4D19B;
+}
+
+.kenai-txt {
+  color: black;
+  font-size: 14px;
+  padding: 10px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: auto;
+  transform: translate(0, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.puppy-imgs div:hover .kenai-overlay{
+  opacity: 1;
+}
+
+
+/* Grid Images */
+.k-proper {
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
+}
+.k-cute {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+.k-window {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.k-camp{
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+.k-bear {
+  grid-column: 2 / 4;
+  grid-row: 3 / 5;
+}
+.k-mermaid {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+.k-unicorn {
+  grid-column: 1 / 3;
+  grid-row: 5 / 7;
+}
+.k-cardboard {
+  grid-column: 3 / 4;
+  grid-row: 5 / 6;
+}
+.k-workout {
+  grid-column: 3 / 4;
+  grid-row: 6 / 7;
+}
+
+.k-cgc {
+  grid-column: 2 / 4;
+  grid-row: 7 / 9;
+}
+.k-grad {
+  grid-column: 1 / 2;
+  grid-row: 7 / 8;
+}
+.k-destructive {
+  grid-column: 1 / 2;
+  grid-row: 8 / 9;
+}
+
+.k-tongue{
+  grid-column: 1 / 3;
+  grid-row: 9 / 11;
+}
+.k-tent {
+  grid-column: 3 / 4;
+  grid-row: 9 / 10;
+}
+.k-car{
+  grid-column: 3 / 4;
+  grid-row: 10 / 11;
+}
+
+.k-cone {
+  grid-column: 2 / 4;
+  grid-row: 12 / 14;
+}
+.k-squirrel {
+  grid-column: 1 / 2;
+  grid-row: 12 / 13;
+}
+.k-sewing {
+  grid-column: 1 / 2;
+  grid-row: 13 / 14;
+}
+
+/* Hometown */
+.hometowns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home {
+  width: 75%;
+  margin: 15px;
+  background-color: #D7E9F7;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.home header {
+  background-color: #F4D19B;
+  width: 100%;
+  padding: 20px 0 15px;
+  text-align: center;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Hobbies */
+.hobbies{
+  display: grid;
+  margin: 20px 15px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hobby-img {
+  overflow: hidden;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  color: #334257;
+  margin: 0 15px;
+}
+.hobbies p {
+  font-size: 1.25rem;
+  color: black;
+}
+
+.hiking-img {
+  grid-column: 1 / -1;
+}
+.hiking-txt {
+  grid-column: 1 / -1;
+}
+
+.travel-img{
+  grid-column: 1 / -1;
+  margin-top: 20px;
+}
+
+.travel-txt{
+  grid-column: 1 / -1;
+}
+
+/* TABLET VIEW */
+@media only screen and (min-width: 768px) {
+
+  /* NAVBAR */
+  .navbar-expand-md .navbar-collapse {
+    justify-content: center;
+  }
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #FFF;
+    border: 2px solid white;
+    border-radius: 10%;
+  }
+
+  /* About Me */
+
+  .about-me{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .about {
+    display: flex;
+    width: 30%;
+  }
+  .main-img {
+    width: 55%;
+  }
+
+  .about-me p {
+    display: flex;
+    flex-basis: 350px;
+  }
+  .about-me .main-text {
+    flex-basis: 800px;
+    justify-content: center;
+    text-align: center;
+  }
+  /* About Kenai */
+
+  .kenai-overlay{
+    position: static;
+    opacity: 1;
+    height: 105px;
+    border-top: 3px;
+    border-style: solid;
+    border-color: #334257;
+  }
+
+  .kenai-txt{
+    position: static;
+    opacity: 1;
+    transform: translate(0);
+  }
+
+  .k-proper {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  .k-cute {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+  }
+  .k-window {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .k-mermaid {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .k-camp{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  .k-bear {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .k-unicorn {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .k-cardboard {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  .k-workout {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+
+  .k-destructive {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+  .k-grad {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+  .k-cgc {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+  }
+
+  .k-tongue{
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+  .k-tent {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+  }
+  .k-car{
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+  }
+
+  .k-sewing {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+  .k-squirrel{
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+  }
+  .k-cone {
+    grid-column: 3 / 4;
+    grid-row: 6 / 7;
+  }
+
+  /* Hometown */
+  .hometowns{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .home{
+    flex-basis: 300px;
+  }
+
+  /* Hobbies */
+  .hobbies{
+    margin: 20px;
+    grid-row-gap: 30px;
+    align-items: center;
+  }
+  .hiking-txt {
+    grid-column: 1 / 2;
+  }
+  .hiking-img3 {
+    grid-column: 2 / 3;
+  }
+  .hiking-img2{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .hiking-img4{
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+  }
+  .hiking-img6{
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+  }
+  .travel-txt {
+    grid-column: 2 / 3;
+  }
+  .travel-img3 {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+  }
+  .travel-img2{
+    grid-column: 1 / -1;
+  }
+}
