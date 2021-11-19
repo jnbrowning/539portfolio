@@ -49,7 +49,7 @@ body > header {
   padding: 5px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   top: -40px;
 }
