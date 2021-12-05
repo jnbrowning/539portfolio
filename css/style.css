@@ -268,7 +268,7 @@ legend{
   -ms-transform: translate(-50%, -50%);
 }
 
-.kenai-text:hover .kenai-overlay{
+.puppy-imgs > div:hover .kenai-overlay{
   opacity: 1;
 }
 .kenai-text:focus .kenai-overlay{
@@ -281,10 +281,7 @@ legend{
   animation-delay: 2s;
   animation-iteration-count: 2;
 }
-.kenai-img:hover {
-  animation: shake 1s;
-  animation-iteration-count: 1;
-}
+
 @keyframes shake {
   0% { transform: rotate(0deg); }
   10% { transform: rotate(-1deg); }
@@ -595,6 +592,11 @@ legend{
   }
   /* About Kenai */
 
+  .kenai-img:hover {
+  animation: shake 1s;
+  animation-iteration-count: 1;
+  }
+  
   .skip-img a:focus{
     display: block;
   }
