@@ -1,0 +1,982 @@
+body {
+  background-color: #F8F0DF;
+}
+
+main{
+  margin: 15px 20px 80px;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  padding-top: 20px;
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+main p{
+  margin: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  color: #334257;
+}
+
+footer {
+  background-color: #037CB0!important;
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+  padding: 20px;
+  font-size: 1rem;
+
+}
+body > header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Skip to Main Content */
+.skip a{
+  background: black;
+  color: white;
+  left: 0;
+  padding: 5px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 2;
+  position: absolute;
+  top: -40px;
+}
+
+.skip a:focus{
+  top: 3px;
+  left: 3px;
+  border: 2px dashed;
+  border-color: #334257;
+  border-radius: 10%;
+}
+
+.skip-img a:focus{
+  display: none;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #037CB0!important;
+  font-family: 'Josefin Sans', sans-serif;
+  justify-content: flex-end;
+}
+
+.navbar-light .navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #FFF;
+}
+
+.navbar-light .navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: black;
+}
+
+/* About Me */
+.wrapper {
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typewriter {
+  width: 22ch;
+  animation: typing 2s steps(22);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+.about{
+  width: 176px;
+  border-radius: 50%;
+  border-color: #9D9D9D;
+  display: block;
+  border-style: solid;
+  border-width: 3px;
+  margin: 30px auto;
+}
+
+.main-img{
+  width: 60%;
+}
+
+.about-me{
+  display: flex;
+  flex-direction: column;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 176px;
+  height: 176px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-keyboard:focus .flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+.flip-card-front > img{
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.flip-card-front, .flip-card-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #00274b;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.flip-card-back > p {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 50px;
+}
+
+/* form */
+form {
+  background-color: #F4D19B;
+  width: 90%;
+  padding: 15px;
+  margin: 15px auto 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+}
+
+label {
+  display: block;
+  color: black;
+  padding: 3px;
+  margin-left: 5%;
+  margin-top: 10px;
+}
+
+input {
+  display: block;
+  padding: 5px;
+  width: 90%;
+  margin-left: 5%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+textarea {
+  width: 90%;
+  height: 150px;
+  margin-left: 5%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.submit {
+  width: 50%;
+  margin: 10px auto;
+  font-family: 'Josefin Sans', sans-serif;
+  height: 50px;
+  background-color: #037CB0;
+}
+
+.submit:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+legend{
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+/* About Kenai */
+.puppy-imgs{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px 10px 10px;
+  grid-gap: 5px;
+  align-items: center;
+}
+
+.puppy-imgs > div{
+  border-width: 3px;
+  border-style: solid;
+  border-color: #334257;
+  position: relative;
+  cursor: pointer;
+}
+
+.kenai-img{
+  display: block;
+  height: auto;
+}
+
+.kenai-overlay{
+  position: absolute;
+  border: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  transition: 1s ease;
+
+}
+
+.kenai-txt {
+  font-family: 'Josefin Sans', sans-serif;
+  color: transparent;
+  font-size: 14px;
+  padding: 10px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: auto;
+  transform: translate(0, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.kenai-overlay:hover{
+  background-color: #F4D19B;
+}
+.kenai-overlay:hover .kenai-txt {
+  color: black;
+}
+.kenai-overlay:focus{
+  background-color: #F4D19B;
+}
+.kenai-overlay:focus .kenai-txt {
+  color: black;
+}
+
+/* animation */
+.k-proper {
+  animation: shake 1s;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+}
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-1deg); }
+  20% { transform: rotate(1deg); }
+  30% { transform:rotate(0deg); }
+  40% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  60% { transform: rotate(0deg); }
+  70% { transform:rotate(-1deg); }
+  80% { transform:rotate(1deg); }
+  90% { transform: rotate(0deg); }
+  100% { transform: rotate(-1deg); }
+}
+
+/* Grid Images */
+.k-proper {
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
+}
+.k-cute {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+.k-window {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.k-camp{
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+.k-bear {
+  grid-column: 2 / 4;
+  grid-row: 3 / 5;
+}
+.k-mermaid {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+.k-unicorn {
+  grid-column: 1 / 3;
+  grid-row: 5 / 7;
+}
+.k-cardboard {
+  grid-column: 3 / 4;
+  grid-row: 5 / 6;
+}
+.k-workout {
+  grid-column: 3 / 4;
+  grid-row: 6 / 7;
+}
+
+.k-cgc {
+  grid-column: 2 / 4;
+  grid-row: 7 / 9;
+}
+.k-grad {
+  grid-column: 1 / 2;
+  grid-row: 7 / 8;
+}
+.k-destructive {
+  grid-column: 1 / 2;
+  grid-row: 8 / 9;
+}
+
+.k-tongue{
+  grid-column: 1 / 3;
+  grid-row: 9 / 11;
+}
+.k-tent {
+  grid-column: 3 / 4;
+  grid-row: 9 / 10;
+}
+.k-car{
+  grid-column: 3 / 4;
+  grid-row: 10 / 11;
+}
+
+.k-cone {
+  grid-column: 2 / 4;
+  grid-row: 12 / 14;
+}
+.k-squirrel {
+  grid-column: 1 / 2;
+  grid-row: 12 / 13;
+}
+.k-sewing {
+  grid-column: 1 / 2;
+  grid-row: 13 / 14;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  display: block;
+  background-color: black;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #F8F0DF;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  opacity: 1;
+}
+.close:hover,
+.close:focus {
+  color: white!important;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+  max-height: 850px;
+  overflow: hidden;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  opacity: .7;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -50px;
+}
+.prev{
+  left: -50px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  opacity: 1;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Hometown */
+.hometowns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home {
+  width: 75%;
+  margin: 15px;
+  background-color: #D7E9F7;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.home header {
+  background-color: #F4D19B;
+  width: 100%;
+  padding: 20px 0 15px;
+  text-align: center;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Hobbies */
+
+.hobbies{
+  display: grid;
+  margin: 20px 15px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hobby-img {
+  overflow: hidden;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  color: #334257;
+  margin: 0 15px;
+}
+.hobbies p {
+  font-size: 1.25rem;
+  color: black;
+}
+
+.hiking-img {
+  grid-column: 1 / -1;
+}
+.hiking-txt {
+  grid-column: 1 / -1;
+}
+
+.travel-img{
+  grid-column: 1 / -1;
+  margin-top: 20px;
+}
+
+.travel-txt{
+  grid-column: 1 / -1;
+}
+
+/* TABLET VIEW */
+@media only screen and (min-width: 768px) {
+
+  /* NAVBAR */
+  .navbar-expand-md .navbar-collapse {
+    justify-content: center;
+  }
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #FFF;
+    border: 2px solid white;
+    border-radius: 10%;
+  }
+
+  /* About Me */
+
+  .about-me{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .about {
+    width: 240px;
+  }
+  .flip-card{
+    width: 240px;
+    height: 240px;
+  }
+  .main-img {
+    width: 55%;
+  }
+
+  .about-me p {
+    flex-basis: 60%;
+  }
+  .about-me .main-text {
+    flex-basis: 800px;
+    justify-content: center;
+    text-align: center;
+  }
+  /* form */
+  form {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  label {
+    margin-left: 10%;
+  }
+
+  input {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  textarea {
+    width: 80%;
+    margin-left: 10%;
+    height: 50px;
+  }
+
+  legend{
+    font-size: 2rem;
+  }
+  /* About Kenai */
+
+  .skip-img a:focus{
+    display: block;
+  }
+
+.kenai-overlay{
+    position: static;
+    background-color: #F4D19B;
+    height: 105px;
+    border-width: 2px 0 0 0;
+    border-style: solid;
+    border-color: #334257;
+  }
+
+  .kenai-txt{
+    position: static;
+    color: black;
+    transform: translate(0);
+  }
+
+  .k-proper {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  .k-cute {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+  }
+  .k-window {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .k-mermaid {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .k-camp{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  .k-bear {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .k-unicorn {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .k-cardboard {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  .k-workout {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+
+  .k-destructive {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+  .k-grad {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+  .k-cgc {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+  }
+
+  .k-tongue{
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+  .k-tent {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+  }
+  .k-car{
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+  }
+
+  .k-sewing {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+  .k-squirrel{
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+  }
+  .k-cone {
+    grid-column: 3 / 4;
+    grid-row: 6 / 7;
+  }
+
+
+  /* Hometown */
+  .hometowns{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .home{
+    flex-basis: 300px;
+  }
+
+  /* Hobbies */
+  .hobbies{
+    margin: 20px;
+    grid-row-gap: 30px;
+    align-items: center;
+  }
+  .hiking-txt {
+    grid-column: 1 / 2;
+  }
+  .hiking-img3 {
+    grid-column: 2 / 3;
+  }
+  .hiking-img2{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .hiking-img4{
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+  }
+  .hiking-img6{
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+  }
+  .travel-txt {
+    grid-column: 2 / 3;
+  }
+  .travel-img3 {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+  }
+  .travel-img2{
+    grid-column: 1 / -1;
+  }
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width: 1100px) {
+
+  .navbar-expand-md .navbar-collapse {
+    justify-content: flex-start;
+  }
+
+  .navbar-expand-md .navbar-nav .nav-link {
+    margin: 0 15px;
+  }
+
+  main {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* About Me */
+  main p{
+    font-size: 1.25rem;
+  }
+  h1 {
+    font-size: 2rem;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .about-me{
+    margin: 0 60px;
+  }
+  .about{
+    width: 215px;
+  }
+  .flip-card{
+    width: 215px;
+    height: 215px;
+  }
+  .main-img{
+    border-radius: 0;
+    flex-basis: 60%;
+  }
+  .about-me .main-text{
+    flex-basis: 35%;
+    text-align: left;
+  }
+  .about-me p {
+    flex-basis: 70%;
+    padding: 30px;
+  }
+  form {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  /* kenai */
+  .puppy-imgs{
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 100px;
+  }
+  .puppy-imgs > div{
+    border: none;
+    grid-row: auto;
+    grid-column: auto;
+  }
+  .kenai-overlay{
+    border: none;
+    margin-top: 15px;
+    text-align: center;
+  }
+  div .k-squirrel{
+    grid-column: 2 / 3;
+  }
+  /* hobbies */
+
+  .parallax-canyon {
+    /* The image used */
+    background-image: url("../images/hobbies/hiking.JPG");
+
+    /* Set a specific height */
+    min-height: 900px;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax-snow {
+    /* The image used */
+    background-image: url("../images/hobbies/snow.JPG");
+
+    /* Set a specific height */
+    min-height: 900px;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax-rome {
+    /* The image used */
+    background-image: url("../images/hobbies/rome.JPG");
+
+    /* Set a specific height */
+    min-height: 900px;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax-colosseum {
+    /* The image used */
+    background-image: url("../images/hobbies/travelling.JPG");
+
+    /* Set a specific height */
+    min-height: 900px;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hiking-img, .travel-img{
+    display: none;
+  }
+
+  .hobbies{
+    margin-left: 0;
+    margin-right: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .hiking-img3 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  .hiking-txt{
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+  }
+  .hiking-img2{
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+  }
+  .hiking-img4{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  .hiking-img6{
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+  }
+
+  .parallax-rome{
+    grid-column: 1 / -1;
+  }
+
+  .travel-img2{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  .travel-txt{
+    grid-column: 2 / 4;
+  }
+
+  .travel-img3{
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+  }
+
+}
+
+@media only screen and (min-width: 1700px) {
+  .about{
+    width: 350px;
+  }
+  .flip-card{
+    width: 350px;
+    height: 350px;
+  }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  /*Turn off scroll*/
+  .parallax{
+    background-attachment: scroll; /* Removes scroll animation */
+  }
+  .k-proper > .kenai-img {
+    animation: none;
+  }
+  .kenai-img:hover{
+    animation: none;
+  }
+  .flip-card-inner{
+    transition: none;
+  }
+  .flip-card {
+    background-color: #334257;
+  }
+  .typewriter {
+    animation: none;
+  }
+}
