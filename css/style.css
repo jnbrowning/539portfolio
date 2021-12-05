@@ -268,7 +268,7 @@ legend{
   -ms-transform: translate(-50%, -50%);
 }
 
-.puppy-imgs > div:active .kenai-overlay{
+.puppy-imgs > div:hover .kenai-overlay{
   opacity: 1;
 }
 .kenai-text:focus .kenai-overlay{
